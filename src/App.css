@@ -91,3 +91,8 @@ p {
   text-align: center;
   padding: 2 rem;
 }
+
+
+li{
+  list-style-type: none; 
+}

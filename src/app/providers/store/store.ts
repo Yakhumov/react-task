@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-import PostsReducer from "../../../widgets/Posts/model/slices/PostsSlices";
+import PostsReducer from "../../../entities/Posts/model/slices/PostsSlices";
 import { profileApi } from "../../../shared/api/rtkApi";
 
 const store = configureStore({

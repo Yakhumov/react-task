@@ -1,4 +1,4 @@
-import { Profile } from "../../widgets/Profile/Profile";
+import { Profile } from "../../widgets/Profile/ui/Profile"; 
 
 export const ProfilePage = () => {
   return <Profile userId="1" />;   

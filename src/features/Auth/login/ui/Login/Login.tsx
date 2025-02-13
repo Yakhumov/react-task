@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { IForm } from "../../../shared/types/types";
+import { IForm } from "../../../../../shared/types/types";
 import LoginForm from "../LoginForm/LogiForm";
 
 export const Login = () => {

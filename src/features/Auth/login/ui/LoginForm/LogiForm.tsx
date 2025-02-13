@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { UseFormRegister, FieldErrors } from "react-hook-form";
-import { IForm } from "../../../shared/types/types";
+import { IForm } from "../../../../../shared/types/types"; 
 
 interface LoginFormProps {
   register: UseFormRegister<IForm>;

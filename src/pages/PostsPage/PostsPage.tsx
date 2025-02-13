@@ -1,4 +1,4 @@
-import { Posts } from "../../widgets/Posts/ui/Posts";
+import { Posts } from "../../widgets/Posts/ui/Posts/Posts";
 
 export const PostsPage = () => {
   return <Posts />;

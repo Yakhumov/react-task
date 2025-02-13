@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { URL } from "../../../../shared/api/api";
-import { IPosts, PostsShema } from "../../../../shared/types/types";
+import { IPosts, PostsShema } from "../../../../entities/Posts/types/types";
 
 const initialState: PostsShema = {
   posts: [],
