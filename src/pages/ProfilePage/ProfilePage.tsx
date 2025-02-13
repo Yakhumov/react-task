@@ -1,5 +1,5 @@
-import { Profile } from "../../features/Profile/Profile";
+import { Profile } from "../../widgets/Profile/Profile";
 
 export const ProfilePage = () => {
-  return <Profile userId="1" />;  
+  return <Profile userId="1" />;   
 };

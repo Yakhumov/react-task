@@ -1,4 +1,4 @@
-import { Login } from "../../features/Login/Login";
+import { Login } from "../../features/Auth/Login/Login";
 
 export const LoginPage = () => {
   return <Login />;

@@ -1,4 +1,4 @@
-import { Home } from "../../features/Home/Home";
+import { Home } from "../../widgets/Home/Home";
 
 
 export const HomePage = () => {
