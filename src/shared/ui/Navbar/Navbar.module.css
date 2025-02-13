@@ -1,0 +1,23 @@
+.header{
+  background: #171717;
+  padding: 30px;
+
+}
+
+.nav{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+
+.nav_link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav_link:hover { 
+  background-color: rgb(43, 43, 125);
+}
+
+  
