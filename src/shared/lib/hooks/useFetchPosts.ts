@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { URL } from "../../api/api";
-import { IPosts } from "../../types/types";
+import { IPosts } from "../../../entities/Posts/types/types";
 
 const useFetchPosts = () => {
   const [posts, setPosts] = useState<IPosts[]>([]);

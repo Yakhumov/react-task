@@ -11,7 +11,7 @@ const useFetchUser = () => {
     const getUser = async () => {
       setLoading(true);
       try {
-        const response = await fetch(URL_USER(1));
+        const response = await fetch(URL_USER('1')); 
         if (!response.ok) {
           throw new Error(`Ошибка: ${response.status}`);
         }

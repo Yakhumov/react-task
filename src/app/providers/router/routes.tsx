@@ -11,6 +11,7 @@ export const AppRouter = () => {
       <Route path="news" element={<PostsPage />} />
       <Route path="login" element={<LoginPage />} />
       <Route path="profile" element={<ProfilePage />} />
+      <Route path="weather" element={""} />   
     </Routes>
   );
 };

@@ -18,6 +18,9 @@ export const Navbar = () => {
         <Link to="/profile" className={styles.nav_link}>
           Профиль 
         </Link>
+        <Link to="/weather" className={styles.nav_link}>
+          Погода
+        </Link>
       </nav> 
     </header>
   );
