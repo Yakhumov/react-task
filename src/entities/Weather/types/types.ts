@@ -10,7 +10,7 @@ export interface IWeather {
 
 export interface IWeatherData {  
     data: IWeather | null,
-    saavedHistory: string[] 
+    savedHistory: string[] 
     error?: string, 
     loading: boolean 
 }
