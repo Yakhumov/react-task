@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { useAppDispatch } from "../../app/providers/store/store";
 import { fetchweather } from "../../entities/Weather/model/slices/WeatherSlices";
 
-
-
 import { Weather } from "../../widgets/Weather";
 
 export const WeatherPage = () => {
@@ -15,8 +13,7 @@ export const WeatherPage = () => {
 
   return (
     <div className="wether-block">
-     
-      <Weather/>
+      <Weather />
     </div>
   );
 };

@@ -1,19 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-interface IWeather {
-  temperature: number;
-  location: string;
-  windSpeed: number;
-  humidity: number;
-  icon: string;
-}
+import { IWeatherData, IWeather } from "../../types/types";
 
-interface IWeatherData {
-  data: IWeather | null;
-  savedHistory: string[]; 
-  error?: string;
-  loading: boolean;
-}
 
 const initialState: IWeatherData = {
   data: null,

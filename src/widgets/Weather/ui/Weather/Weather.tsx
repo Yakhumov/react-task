@@ -3,6 +3,8 @@ import { useAppDispatch } from "../../../../app/providers/store/store";
 import { fetchweather } from "../../../../entities/Weather/model/slices/WeatherSlices";
 import { RootState } from "../../../../app/providers/store/store";
 import { SearchBar } from "../../../Search";
+
+
 const clear_icon = new URL("../assets/clear.png", import.meta.url).href;
 const humidity_icon = new URL("../assets/humidity.png", import.meta.url).href;
 const wind_icon = new URL("../assets/wind.png", import.meta.url).href;
