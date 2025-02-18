@@ -29,7 +29,7 @@ export const fetchweather = createAsyncThunk<IWeather, string>(
         location: data.name,
         windSpeed: data.wind.speed,
         humidity: data.main.humidity,
-        icon: data.weather[0].icon,
+        icon: `http://openweathermap.org/img/w/${data.weather[0].icon}.png`,
       };
     } catch (error) {
       if (error instanceof Error) {

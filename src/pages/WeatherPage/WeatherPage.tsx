@@ -12,8 +12,8 @@ export const WeatherPage = () => {
   }, [dispatch]);
 
   return (
-    <div className="wether-block">
+
       <Weather />
-    </div>
+  
   );
 };

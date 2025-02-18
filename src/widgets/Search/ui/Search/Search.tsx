@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAppDispatch } from "../../../../app/providers/store/store";
 import { fetchweather } from "../../../../entities/Weather/model/slices/WeatherSlices";
-const search_icon = new URL("../assets/search.png", import.meta.url).href;
+import search_icon from "../../../../assets/search.png";
 
 export const SearchBar = () => {
   const dispatch = useAppDispatch();
