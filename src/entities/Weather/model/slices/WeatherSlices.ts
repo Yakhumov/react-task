@@ -2,15 +2,13 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 import { IWeatherData, IWeather } from "../../types/types";
 
-
 const initialState: IWeatherData = {
   data: null,
-  savedHistory: JSON.parse(localStorage.getItem("savedHistory") || "[]"), // Фикс имени
+  savedHistory: JSON.parse(localStorage.getItem("savedHistory") || "[]"),
   loading: false,
   error: undefined,
 };
 
-// Асинхронный thunk
 export const fetchweather = createAsyncThunk<IWeather, string>(
   "fetch/weather",
   async (city, { rejectWithValue }) => {
@@ -67,10 +65,15 @@ export const weatherSlice = createSlice({
           icon: action.payload.icon,
         };
 
-        // Добавляем город в историю
         if (!state.savedHistory.includes(action.payload.location)) {
-          state.savedHistory = [action.payload.location, ...state.savedHistory].slice(0, 4);
-          localStorage.setItem("savedHistory", JSON.stringify(state.savedHistory));
+          state.savedHistory = [
+            action.payload.location,
+            ...state.savedHistory,
+          ].slice(0, 4);
+          localStorage.setItem(
+            "savedHistory",
+            JSON.stringify(state.savedHistory)
+          );
         }
       })
       .addCase(fetchweather.rejected, (state, action) => {
