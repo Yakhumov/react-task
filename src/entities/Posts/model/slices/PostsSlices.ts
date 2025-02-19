@@ -8,7 +8,6 @@ const initialState: PostsShema = {
   error: undefined,
 };
 
-// Создаем асинхронный `thunk`
 export const fetchPosts = createAsyncThunk<IPosts[],void >(
   "fetch/posts",
   async (_, { rejectWithValue }) => {
